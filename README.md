@@ -1,2 +1,2 @@
 # QA-Portfolio-SauceDemo-Manual
-QA Testing on SauceDemo
+End-to-End Testing on SauceDemo Website https://www.saucedemo.com/
