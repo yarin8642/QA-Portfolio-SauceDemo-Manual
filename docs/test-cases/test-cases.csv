@@ -1,0 +1,11 @@
+ID,TITLE,PRECONDITIONS,STEPS,EXPECTED
+TC-001,Login with valid credentials,User is on login page,"1) Enter username: standard_user 2) Enter password: secret_sauce 3) Click Login","User is redirected to Products page (https://www.saucedemo.com/inventory.html) and product list is displayed"
+TC-002,Login with invalid password,User is on login page,"1) Enter username: standard_user 2) Enter password: wrong_password 3) Click Login","Error message is displayed and user remains on login page"
+TC-003,Login with empty fields,User is on login page,"1) Leave username empty 2) Leave password empty 3) Click Login","Validation error message is displayed"
+TC-004,Logout from system,User is logged in,"1) Open side menu 2) Click Logout","User is redirected to login page"
+TC-005,Open product details,User is logged in on Products page,"1) Click a product name or image","Product details page opens and product information is displayed"
+TC-006,Add item to cart,User is logged in on Products page,"1) Click 'Add to cart' on any product 2) Open Cart","Cart badge updates and the item appears in cart"
+TC-007,Remove item from cart,At least one item is in cart,"1) Open Cart 2) Click 'Remove' on the item","Item is removed from cart and cart badge updates"
+TC-008,Start checkout,At least one item is in cart,"1) Open Cart 2) Click Checkout","Checkout information page opens"
+TC-009,Checkout missing First Name,User is on checkout information page,"1) Leave First Name empty 2) Fill Last Name and Zip 3) Click Continue","Error message is displayed and user remains on checkout information page"
+TC-010,Complete checkout successfully,User is on checkout information page with at least one item in cart,"1) Fill First Name, Last Name, Zip 2) Click Continue 3) Click Finish","Order completion page is displayed and confirmation message appears"
